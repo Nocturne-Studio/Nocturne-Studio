@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Project 1",
+    "description": "A multimedia design project.",
+    "image": "project1.jpg",
+    "link": "#"
+  },
+  {
+    "title": "Project 2",
+    "description": "A web development project.",
+    "image": "project2.jpg",
+    "link": "#"
+  }
+]

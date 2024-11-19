@@ -1,0 +1,111 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+:root {
+  --bg-color: #1c1c1c;
+  --text-color: #e0d8d1;
+}
+
+[data-theme='light'] {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+}
+
+a {
+  color: #c5b596;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2a2a2a;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  margin-left: 1rem;
+}
+
+#theme-toggle {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: #c5b596;
+  color: #1c1c1c;
+}
+
+#hero {
+  height: 90vh;
+  background: url('https://source.unsplash.com/1920x1080/?library,books,dark') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.portfolio-grid, .blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.portfolio-item, .blog-post {
+  background-color: #2a2a2a;
+  padding: 1.5rem;
+  border: 1px solid #c5b596;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.portfolio-item:hover, .blog-post:hover {
+  transform: scale(1.05);
+}
+
+form input, form textarea, form button {
+  padding: 0.8rem;
+  border: none;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #c5b596;
+  color: #1c1c1c;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #b89c76;
+}
+
+#search {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}

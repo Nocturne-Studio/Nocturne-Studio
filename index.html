@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nocturne Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body data-theme="dark">
+  <header class="header">
+    <div class="logo">Nocturne Studio</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="hero-text">
+        <h1>Welcome to Nocturne Studio</h1>
+        <p></p>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm a multimedia specialist passionate about blending art and technology to create captivating experiences.
+        Explore my portfolio and blog to see my journey.
+      </p>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+      <h2>Portfolio</h2>
+      <div class="portfolio-grid"></div>
+    </section>
+
+    <section id="blog" class="blog-section">
+      <h2>Blog</h2>
+      <input type="text" id="search" placeholder="Search blog posts...">
+      <div class="blog-posts"></div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 Nocturne Studio. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
